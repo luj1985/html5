@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.component {
+  display: inline;
+  overflow: hidden;
+  position: absolute;
+
+  /* for chrome */
+  -webkit-transition-property: top, left, height, width, opacity;
+  -webkit-transition-duration: .5s;
+  /* for firefox */
+  -moz-transition-property: top, left, height, width, opacity;
+  -moz-transition-duration: .5s;
+  /* for opera */
+  -o-transition-property: top, left, height, width, opacity;
+  -o-transition-duration: .5s;
+}
+
+article {
+  padding: 5px;
+}
